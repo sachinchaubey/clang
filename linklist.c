@@ -11,7 +11,6 @@ void delete_beg();
 void delete_mid(int data);
 void delete_end();
 
-
 struct node{
     int dt;
     struct node *next;
@@ -28,7 +27,7 @@ int main()
      printf(" enter 3 for insert_mid\n");
      printf(" enter 4 for insert_end\n");
      printf(" enter 5 for delete_beg\n");
-     printf(" enter 6 for delete_mid\n");    
+     printf(" enter 6 for delete_mid\n");
      printf(" enter 7 for delete_end\n");
      printf(" enter 8 for traverse\n");
      printf(" enter 9 for exit\n");
@@ -121,7 +120,7 @@ void create_ll(int x)
             q->next=p;
         q=p;
         p->next=NULL;
-        //read(x);
+        read(x);
         
         
 }
@@ -157,11 +156,9 @@ void insert_mid(int item,int data)
             r=q;
             q=q->next;
         }
-        
         r->next=p;
         p->next=q;
         p->dt=item;
-        
     }
 }
 
